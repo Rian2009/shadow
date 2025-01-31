@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <meta name="description" content="Site do Shadow">
+</head>
+
+<body>
+    <a id="fixed" href="https://wa.me/000000" target="_blank"><img id="fixedimg" src="whatslogo.png"
+            alt="whatslogo"></a>
+    <header id="contato">
+        <div id="rap">
+            <a href="mailto:mail@mail.com">mail@mail.com</a>
+            <a href="tel:+553100000000">0000-0000</a>
+            <a href="https://instagram.com" target="_blank">@minhapagina</a>
+        </div>
+        <a href="https://pt.wikipedia.org/wiki/Shadow_the_Hedgehog" target="_blank"><button
+                id="butao">Explorar</button></a>
+    </header>
+    <nav id="navy">
+        <div id="buttons">
+            <img src="logo.png" alt="logo" id="logo">
+            <a href="index.html">HOME</a>
+            <a href="form.html">FORM</a>
+        </div>
+    </nav>
+    <hr>
+    <section>
+        <div id="main">
+            <h1 style="text-decoration: underline; padding-left: 20px;">Formulário</h1>
+
+            <br>
+
+            <form target="_blank" method="post">
+
+                <!--Informações Principais-->
+                <fieldset class="field-info">
+                    <legend><b>Informações Principais</b></legend>
+                    <!--Nome-->
+                    <label for="nomeComp">Nome Completo</label><br>
+                    <input type="text" id="nomeComp" name="nomeComp" required maxlength="100"><br><br>
+                    <!--E-mail-->
+                    <label for="email">E-mail</label><br>
+                    <input type="emailForm" id="email" name="email" required placeholder="exemplo@email.com"><br><br>
+                    <label for="dataNasci">Data de Nascimento</label><br>
+                    <!--Data de nascimento-->
+                    <input type="date" id="dataNasci" name="dataNasci" required><br><br>
+                    <label for="senhaForm" minlength="6">Senha</label><br>
+                    <!--Senha-->
+                    <input type="password" id="senhaForm" name="senhaForm" required><br><br>
+                    <label for="numeroTel">Número de telefone</label><br>
+                    <!--Numero de Telefone-->
+                    <input type="tel" id="numeroTel" name="numeroTel" required placeholder="+55 99 9999-9999"><br>
+                </fieldset>
+
+                <br><br>
+                <!--Informações adicionais-->
+                <fieldset class="field-pais">
+                    <legend><b>Informações adicionais</b></legend>
+
+                    <!--País-->
+                    <label for="pais">Selecione seus País:</label><br>
+                    <select id="pais" name="pais">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Uruguai">Uruguai</option>
+                    </select>
+
+                    <!--Gênero-->
+                    <p>Selecione seu gênero:</p>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" id="outro" name="genero" value="outro">
+                    <label for="outro">Outro</label>
+                </fieldset>
+                <br><br>
+
+                <!--Comentário adicional-->
+                <fieldset>
+                    <legend><b>Comentários</b></legend>
+                    <p>Digite no campo abaixo alguma mensagem ou comentário adicional:</p>
+                    <textarea name="mensagem" rows="10" cols="30"></textarea>
+                    <br><br>
+                </fieldset>
+                <br>
+
+                <!--Termos e condições-->
+                <p>Voce aceita os termos e condições?</p>
+                <input type="checkbox" id="termosECondi" name="termosECondi" value="Bike" required>
+                <label for="termosECondi">Li e aceito os termos e condições de uso</label><br><br>
+                <input type="submit"><!--Botão enviar-->
+                <input type="reset"> <!--Botão redefinir-->
+                <!--Fim do formulário-->
+            </form>
+        </div>
+    </section>
+    <div id="textSec">
+    </div>
+    <footer>
+        <a href="mailto:mail@mail.com">mail@mail.com</a>
+        <a href="tel:+553100000000">0000-0000</a>
+        <a href="https://instagram.com" target="_blank">@minhapagina</a>
+        <p>&copy; Todos os Direitos Reservados.</p>
+    </footer>
+</body>
+
+</html>
